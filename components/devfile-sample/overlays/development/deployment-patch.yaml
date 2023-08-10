@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/jhutar-tenant/devfile-sample/devfile-sample@sha256:f159d68886f87fe78baaaf1091205570b4757a49283b24f41210f22049dfb70b
+        name: my-nodejs
+        resources: {}
+status: {}
